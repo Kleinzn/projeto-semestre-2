@@ -1,0 +1,289 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Outfit', sans-serif;
+}
+
+body {
+    height: 100vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow-y: hidden;
+}
+
+nav.menu-lateral {
+    width: 80px;
+    height: 100vh;
+    /* 100% da altura da tela */
+    background-color: #202020;
+    box-shadow: 3px 0 0 #181818;
+    position: fixed;
+    top: 0;
+    left: 0;
+    overflow-y: hidden;
+    /* Adicionado para permitir rolar a barra lateral quando o conteúdo for mais longo que a tela */
+    transition: width 0.3s;
+    /* Adicionado um efeito de transição para suavizar a expansão/retração */
+    z-index: 2;
+    margin-right: 5px;
+}
+
+nav.menu-lateral.expandir {
+    width: 300px;
+}
+
+ul {
+    height: 100%;
+    list-style-type: none;
+}
+
+ul li.item-menu {
+    transition: .2s;
+}
+
+ul li.ativo:hover {
+    background-color: #333333;
+}
+
+ul li.item-menu:hover {
+    background: #333333;
+}
+
+ul li.item-menu a {
+    color: #00ffc8e2;
+    text-decoration: none;
+    font-size: 20px;
+    padding: 20px 4%;
+    display: flex;
+    margin-bottom: 20px;
+    line-height: 40px;
+    justify-content: center;
+}
+
+ul li.item-menu a .icon>i {
+    font-size: 30px;
+    padding: 10px;
+}
+
+.pai {
+    display: flex;
+    margin-left: 85px;
+    margin-right: 1%;
+    padding: 20px 0px;
+    flex-direction: column;
+
+}
+
+.mainCima,
+.mainBaixo {
+    flex: 1;
+    margin: 1%;
+    min-height: 30vh;
+    border-radius: 5px;
+    display: flex;
+}
+
+.mainCima{
+    min-height: 50vh;
+}
+
+.saldo,
+.limites{
+    width: 500px;
+    background-color: #202020;
+    border-radius: 5px;
+    margin: 1%;
+        padding-bottom: 10px;
+}
+
+.limites{
+    width: 100%;
+}
+.infos {
+    color: rgb(255, 255, 255);
+    margin-left: 20px;
+}
+.limitenav {
+    color: rgb(255, 255, 255);
+    margin-left: 20px
+}
+
+.limitenav h2 {
+    color: aquamarine;
+}
+
+.btncomputador{
+    display: flex;
+    width: auto;
+    justify-content: center;
+    align-items: center;
+    padding-left: 20px;
+}
+
+.infos h2 {
+    color: aquamarine;
+}
+
+.links{
+    color: #73deba;
+    opacity: 60%;
+}
+
+.links:hover{
+    color: #73deba;
+    opacity: 100%;
+}
+
+#btn-rend{
+    color: aquamarine;
+    background-color: #202020;
+    border: none;
+    outline: none;
+    height: 20px;
+}
+
+#btn-rend:hover{
+    color: rgb(62, 62, 62);
+    background-color: #202020;
+    border: none;
+    outline: none;
+    height: 20px;
+}
+
+.cartao-img {
+    width: 150px;
+    box-shadow: 10px 10px 8px black;
+    margin-left: 50px;
+    margin-top: 70px;
+}
+
+.mainBaixo {
+    background-color: #202020;
+    width: 96%;
+    margin-left: 25px;
+}
+
+.textoCartao{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.textoCartao p {
+    color: rgb(255, 255, 255);
+    margin-left: 30px;
+}
+
+.pedir {
+    width: 150px;
+    height: 50px;
+    border-radius: 50px;
+    color: #000000;
+    background-color: #73deba;
+    font-weight: 600;
+
+    right: 300px;
+
+    cursor: pointer;
+}
+/*.imoveis,
+.equipamentos,
+.veiculos {
+    flex: 1;
+     Ocupa todo o espaço disponível no contêiner pai 
+    margin: 1%;
+    background-color: #333333;
+    width: 500px;
+    height: 90vh;
+    border-radius: 5px;
+}*/
+
+/* Adaptação para dispositivos menores */
+@media (max-width: 768px) {
+
+    body{
+        overflow-y: scroll;
+        overflow-x: hidden;
+    }
+
+    .saldo,
+    .limites{
+        width: 99%;
+    }
+
+
+    .mainBaixo{
+        width: auto;
+        margin-left: 1%;
+    }
+
+.mainCima,
+.mainBaixo{
+    flex-direction: column;
+}
+    nav.menu-lateral {
+        width: 100%;
+        height: 80px;
+        margin-bottom: 5px;
+    }
+
+    ul {
+        display: flex;
+        flex-direction: row;
+
+    }
+
+    ul li.item-menu {
+        width: 100%;
+        height: 100%;
+        margin-bottom: 10px;
+        /* Espaçamento entre os itens */
+    }
+
+    ul li.item-menu a {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 10px;
+    }
+
+    .cartoes{
+
+        display: flex;
+        justify-content: center;
+    }
+    .cartao-img{
+        width: 250px;
+        margin-left: 0;
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
+
+    .btncomputador{
+        padding-left: 0%;
+        padding-top: 20px;
+    }
+    .pai {
+        display: block;
+        margin-left: 1%;
+        margin-top: 85px;
+        padding: 0px 1%;
+        flex-direction: column;
+    }
+
+/*    .imoveis,
+    .equipamentos,
+    .veiculos {
+        flex: 1;
+        margin: 1% 0;
+        background-color: #333333;
+        width: 100%;
+        height: 300px;
+        border-radius: 5px;
+        box-sizing: border-box;
+    }*/
+}

@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ONEBANK</title>
+    <link rel="stylesheet" href="menu.css">
+    <link rel="shortcut icon" href="./img/icons8-this-pc-100.png" type="image/x-icon">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+    <script src="https://cdn.lordicon.com/ritcuqlt.js"></script>
+
+</head>
+
+<body>
+
+    <nav class="menu-lateral">
+
+        <ul>
+            <li class="item-menu ativo">
+                <a href="menu.html">
+                    <span class="icon"><i class="bi bi-house-door"></i></span>
+                </a>
+                </a>
+            </li>
+            <li class="item-menu">
+                <a href="conta.html">
+                    <span class="icon"><i class="bi bi-person-circle"></i></span>
+                </a>
+            </li>
+            <li class="item-menu">
+                <a href="financiamento.html">
+                    <span class="icon"><i class="bi bi-graph-up-arrow"></i></span>
+                </a>
+            </li>
+            <li class="item-menu">
+                <a href="transfe.html">
+                    <span class="icon"><i class="bi bi-cash-coin"></i></span>
+                </a>
+            </li>
+            <li class="item-menu">
+                <a href="suporte.html">
+                    <span class="icon"><i class="bi bi-info-circle-fill"></i></span>
+                </a>
+            </li>
+        </ul>
+    </nav><!--menu-lateral-->
+
+    <div class="pai">
+        <div class="mainCima">
+
+            <div class="saldo">
+                <nav class="infos">
+                    <br>
+                    <h2>Resumo da conta</h2>
+                    <br>
+                    <p>Saldo: R$0.000,00</p>
+                    <br>
+                    <p>Última transação: R$ 0.000,00</p>
+                    <br>
+                    <br>
+
+                    <h2>Pagamentos</h2>
+                    <br>
+                    <p>Vencimento: 0</p>
+                    <br>
+                    <p>Atrasado: 0</p>
+                </nav>
+
+            </div>
+
+            <div class="limites">
+                <nav class="limitenav">
+                    <br>
+                    <h2>Empréstimos</h2>
+                    <br>
+                    <p>Empréstimos totais: 0</p>
+                    <br>
+                    <p>Valor restante: R$ 0.000,00</p>
+                    <br>
+                    <h2>Investimentos</h2>
+                    <br>
+                    <p>Embora a ONEBANK ainda não ofereça opções de investimento direto, convidamos nossos clientes a
+                        explorarem oportunidades de investimento por meio de nossos parceiros. Acessem os links abaixo e
+                        descubram as possibilidades de crescimento financeiro em colaboração conosco.</p>
+                    <br>
+                    <p>Invista com nossos parceiros:</p>
+                    <a class="links"
+                        href="https://accounts.binance.com/pt-BR/register?source=nft&vc=nft&utm_source=googleadwords_int&utm_medium=cpc&ref=KU5RISLQ&gclid=CjwKCAiA9ourBhAVEiwA3L5RFjZupoBR0jjX1gQ3iUXnIj8_NkOtxN6Ca1uaCFQs48uh3k6u4OaduBoCS0QQAvD_BwE"
+                        target="_blank">Criptomoedas : Binance</a><br>
+                    <a class="links"
+                        href="https://www.toroinvestimentos.com.br/?utm_source=google&utm_medium=cpc&utm_campaign=1337061538&utm_content=49035028050&utm_term=toro%20investimentos&gad_source=1&gclid=CjwKCAiA9ourBhAVEiwA3L5RFnSAZqZPdDpLc8j-AM5neOj_Dpt53voQB3XxUlz3YkHjtGvIXQGeCBoCYM8QAvD_BwE"
+                        target="_blank">Renda Fixa : Toro</a> <br>
+                    <a class="links"
+                        href="https://iqbroker.co/lp/mobile-registr/pt/?aff=97642&afftrack=GAD_BR_PT_00_FTD_All_Mob_TEST0703_old_6657169631_c_138105351048_kwd-413987569&gad_source=1&gclid=CjwKCAiA9ourBhAVEiwA3L5RFi1R5rflQiuGDrYFTKvm6TcWJpn1tY3SJi5833Dl1sylc_i_PKTfKBoC6BYQAvD_BwE"
+                        target="_blank">Bolsa de Valores : IqOption</a>
+                    <p id="dashboard">Para solicitar Dashboard via E-mail <input type="button" value="Clique Aqui!" id="btn-rend" onclick="alterarMensagem()"></p>
+
+                    <p id="solicitacao"></p>
+                </nav>
+
+            </div>
+
+        </div>
+        <div class="mainBaixo">
+            <div class="cartoes">
+                <img class="cartao-img" src="./Picsart_23-06-14_00-26-02-528.png" alt="cartao">
+            </div>
+            <div class="textoCartao">
+                <p>
+                    Empresas de tecnologia, preparem-se para uma revolução financeira! <br> Nosso cartão de crédito oferece  benefícios sob medida para impulsionar seu <br> crescimento, desde recompensas generosas até soluções financeiras <br> inteligentes. Entre no futuro dos negócios com confiança e inovação!
+                </p>
+
+            </div>                
+            <div class="btncomputador"><button class="pedir" onclick="enviarSolicitacao()">Peça aqui seu cartão</button>
+                <h4 id="frase" style="display: none;"></h4></div>
+        </div>
+    </div>
+
+
+    <script src="teste.js"></script>
+</body>
+
+</html>
